@@ -230,7 +230,7 @@ console.log("Hello World from main.js!");
 
 //function randomPick(){
 //	return alphabetNumber[Math.floor(Math.random()*alphabetNumber.length)];
-}
+//}
 
 
 // A function that calls the above function 8 times, each time adding the returned value to a string, generating an eight 
@@ -280,4 +280,16 @@ function clearTimeout(){
 // Work that into your interval function to make some animation happen.
 	// document.getElementById("myDiv").style.left = "100px";
 
-
+var interval = setInterval(move, 30)
+var letsMove = document.getElementById("square")
+console.log(letsMove)
+function move(){
+	if(counter === 1000){ 
+		clearInterval(interval)
+		console.log("stop")
+	}else {
+		counter += 10; 
+		letsMove.style.left = counter + 'px'; 
+		console.log(counter);
+	}
+}

@@ -67,4 +67,11 @@ code {
   font-size: 0.8em;
   opacity: 0.1; }
 
+  #square{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+  }
+
 /*# sourceMappingURL=main.css.map */
